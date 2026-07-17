@@ -1,0 +1,908 @@
+{
+  "version": "6.1",
+  "id": "[insert-typebot-id]",
+  "name": "Chatbot CRM Integration Example",
+  "events": [
+    {
+      "id": "ie99fsdkflwvs8rwfdkdzrgg",
+      "outgoingEdgeId": "kx2lll0bd2kriec02yyyharg",
+      "graphCoordinates": {
+        "x": 265.25,
+        "y": 11.23
+      },
+      "type": "start"
+    }
+  ],
+  "groups": [
+    {
+      "id": "fbbjhz8l1rwxbktoq696fasn",
+      "title": "Introduction",
+      "graphCoordinates": {
+        "x": 602,
+        "y": 9.6
+      },
+      "blocks": [
+        {
+          "id": "cf4wvu0dqc0arrd5cu1w4ztl",
+          "type": "text",
+          "content": {
+            "richText": [
+              {
+                "id": "n-nt5DN72N",
+                "type": "p",
+                "children": [
+                  {
+                    "text": "Hello! I'm the virtual assistant. What is your "
+                  },
+                  {
+                    "bold": true,
+                    "text": "full name?"
+                  },
+                  {
+                    "text": " "
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "x4a5wnev73vaumdbe65gxoqc",
+          "outgoingEdgeId": "s2dynf3wwxi0po4rviqmixfu",
+          "type": "text input",
+          "options": {
+            "labels": {
+              "placeholder": "Enter your full name"
+            },
+            "variableId": "uzrxoxyfnfsucs24l1d0h9ut",
+            "audioClip": {
+              "isEnabled": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "o8ms5j416vqjk0l8sbvwji74",
+      "title": "Company",
+      "graphCoordinates": {
+        "x": 934.72,
+        "y": 10.2
+      },
+      "blocks": [
+        {
+          "id": "dkplpbo7386c733btobbztwl",
+          "type": "text",
+          "content": {
+            "richText": [
+              {
+                "id": "NPnQrGf8ST",
+                "type": "p",
+                "children": [
+                  {
+                    "text": "Thanks {{nome}}. What is your "
+                  },
+                  {
+                    "bold": true,
+                    "text": "company name"
+                  },
+                  {
+                    "text": "?"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "ilaumatozhjw7ti587os2cx0",
+          "outgoingEdgeId": "sgwbqb5vinjb58z44k8f7vmv",
+          "type": "text input",
+          "options": {
+            "labels": {
+              "placeholder": "Enter your company name"
+            },
+            "variableId": "pqjt4a8rc5xo87cwfpd6ue63"
+          }
+        }
+      ]
+    },
+    {
+      "id": "rbri19k46n8lzhqhh9yo0gdj",
+      "title": "Email",
+      "graphCoordinates": {
+        "x": 1273.87,
+        "y": 10.75
+      },
+      "blocks": [
+        {
+          "id": "i7dsn2fpnr8erztqo50xnthf",
+          "type": "text",
+          "content": {
+            "richText": [
+              {
+                "id": "n-nt5DN72N",
+                "type": "p",
+                "children": [
+                  {
+                    "text": "What is your "
+                  },
+                  {
+                    "bold": true,
+                    "text": "business email"
+                  },
+                  {
+                    "text": "?"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "vsu2oagi9ymgdjlla3fv0pmi",
+          "outgoingEdgeId": "v9i2q6mltpyu13a8e9f19u6l",
+          "type": "email input",
+          "options": {
+            "variableId": "jn5pf0vi9xma1fyc7ty6hlp5",
+            "labels": {
+              "placeholder": "Enter your business email"
+            },
+            "retryMessageContent": "This email address appears to be invalid. Please enter it again."
+          }
+        }
+      ]
+    },
+    {
+      "id": "drl5rfoqgdl2l95m4a4r984x",
+      "title": "Phone",
+      "graphCoordinates": {
+        "x": 1608.67,
+        "y": 9.4
+      },
+      "blocks": [
+        {
+          "id": "rkq4ujv3ylqj13vbo8vo6d14",
+          "type": "text",
+          "content": {
+            "richText": [
+              {
+                "id": "n-nt5DN72N",
+                "type": "p",
+                "children": [
+                  {
+                    "text": "Please enter your "
+                  },
+                  {
+                    "bold": true,
+                    "text": "phone number or WhatsApp"
+                  },
+                  {
+                    "text": " with country/area code."
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "qxs787vrh9pl8p9fwsw4jjzl",
+          "outgoingEdgeId": "j6a2ponnusdex0y8fyzs51zu",
+          "type": "phone number input",
+          "options": {
+            "variableId": "m5gx2wev37iw2tkdyxpdh0s4",
+            "labels": {
+              "placeholder": "Enter your phone number",
+              "button": "Enviar"
+            },
+            "retryMessageContent": "This phone number appears to be invalid. Please enter it again."
+          }
+        }
+      ]
+    },
+    {
+      "id": "b86tg1qxj9u1cs119g5kot2m",
+      "title": "Service",
+      "graphCoordinates": {
+        "x": 1945.77,
+        "y": 9.55
+      },
+      "blocks": [
+        {
+          "id": "so5ewjd5kncu15fq5rnpoq4k",
+          "type": "text",
+          "content": {
+            "richText": [
+              {
+                "id": "n-nt5DN72N",
+                "type": "p",
+                "children": [
+                  {
+                    "text": "Which service are you interested in?"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "ba427ivkh5e3vergyl4l6tah",
+          "type": "choice input",
+          "items": [
+            {
+              "id": "es14leexp27hq2jre6344qex",
+              "outgoingEdgeId": "vcu20eaoumhiocrgj20t7xjv",
+              "content": "Consulting"
+            },
+            {
+              "id": "hpcukuv1f264ksahmcsluctd",
+              "outgoingEdgeId": "rdtuehcehgmba2ypgggdtzb3",
+              "content": "Software Development"
+            },
+            {
+              "id": "qdzlx8tt3tx3d5c5r0u9hjct",
+              "outgoingEdgeId": "uxzwmrsppxt41h3hc7199f5i",
+              "content": "Systems Integration"
+            },
+            {
+              "id": "oumrtc4d4ys3nag3v9m7tbl9",
+              "outgoingEdgeId": "spii8t92m1ip6iqj0bcn2ak8",
+              "content": "Automation"
+            },
+            {
+              "id": "z3zhcpp8e65bmcbgdq1lw2er",
+              "outgoingEdgeId": "yohg0hkjp19v5s39wxty6qtj",
+              "content": "Technical Support"
+            },
+            {
+              "id": "sv2yzx8m2rr9odi8vr8xynxi",
+              "outgoingEdgeId": "lvtqmmj4thqbto4oco40qob6",
+              "content": "Infrastructure"
+            },
+            {
+              "id": "jrfjov3z0ltwh2lnyqk482yv",
+              "outgoingEdgeId": "y9vnsqrt2akn88z97peqzx2p",
+              "content": "Training"
+            },
+            {
+              "id": "zu64ovmroplovqucag380z0c",
+              "outgoingEdgeId": "vt4bh4fxp1qyqub8umnqun8t",
+              "content": "Maintenance"
+            },
+            {
+              "id": "ztpbc5hde96hynlp1ddowx50",
+              "outgoingEdgeId": "z1l9wcmjjy673g21bfddw1bz",
+              "content": "Other Service"
+            },
+            {
+              "id": "oup55bpoz2s1qfrnu9kk1xur",
+              "outgoingEdgeId": "awc9wfh670c6qmgo5z4grfqv",
+              "content": "Other"
+            }
+          ],
+          "options": {
+            "variableId": "pk2kbwcuet7ul5bkfdr2uqpn",
+            "isMultipleChoice": false
+          }
+        },
+        {
+          "id": "fdtacj6x5lz5wt23c2i8a5ve",
+          "type": "text input",
+          "options": {
+            "labels": {
+              "placeholder": "Enter another service"
+            },
+            "variableId": "pk2kbwcuet7ul5bkfdr2uqpn"
+          }
+        }
+      ]
+    },
+    {
+      "id": "zp6ipzo75djldbdp3bykzslf",
+      "title": "Timestamp",
+      "graphCoordinates": {
+        "x": 2299.87,
+        "y": 298.05
+      },
+      "blocks": [
+        {
+          "id": "kvw2m58fv9hfms2fxpjawont",
+          "type": "Set variable",
+          "options": {
+            "variableId": "ggmxz5gbzsroqy3eqwkuv8gz",
+            "type": "Now",
+            "timeZone": "[enter timeZone]"
+          }
+        },
+        {
+          "id": "h1ustukgsa801ten796b5ih8",
+          "outgoingEdgeId": "vry8lvu9du66af0mxd7w0ncm",
+          "type": "Set variable",
+          "options": {
+            "variableId": "kgvzr8xmbg0ze47ob5qccoaa",
+            "isExecutedOnClient": true,
+            "expressionToEvaluate": "new Date({{dateTime}}).toLocaleString('[]').replace(',', '')",
+            "isCode": true,
+            "type": "Custom"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ciaf08bvhh2ak4l08ex1vfz3",
+      "title": "WhatsApp",
+      "graphCoordinates": {
+        "x": 3034.25,
+        "y": 641.59
+      },
+      "blocks": [
+        {
+          "id": "mp2govji0l2dmpbstydu90pc",
+          "type": "Redirect",
+          "options": {
+            "url": "https://wa.me/[insert-whatsapp-number]?text=DateTime:%20{{formattedDatetime}}%0AName:%20{{name}}%0AOrganization:%20{{organization}}%0AE-mail:%20{{email}}%0ACNPJ:%20{{cnpj}}%0APhone:%20{{phone}}%0AService:%20{{service}}",
+            "isNewTab": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "z71ve6gagw395xt2lf4gubsv",
+      "title": "Variables",
+      "graphCoordinates": {
+        "x": 3040.29,
+        "y": 18
+      },
+      "blocks": [
+        {
+          "id": "tvbdfl3t9phx1blgy0wgspxg",
+          "type": "text",
+          "content": {
+            "richText": [
+              {
+                "id": "2FYWzi-0L2",
+                "type": "p",
+                "children": [
+                  {
+                    "text": "Datetime: {{formattedDatetime}}"
+                  }
+                ]
+              },
+              {
+                "id": "lUQw8v7Ol8",
+                "type": "p",
+                "children": [
+                  {
+                    "text": "Name: {{name}}"
+                  }
+                ]
+              },
+              {
+                "id": "MoUYNuqVCm",
+                "type": "p",
+                "children": [
+                  {
+                    "text": "Organization: {{organization}}"
+                  }
+                ]
+              },
+              {
+                "id": "azl0MDkPHd",
+                "type": "p",
+                "children": [
+                  {
+                    "text": "E-mail: {{email}}"
+                  }
+                ]
+              },
+              {
+                "id": "yLfGN6uAS1",
+                "type": "p",
+                "children": [
+                  {
+                    "text": "CNPJ: {{cnpj}}"
+                  }
+                ]
+              },
+              {
+                "id": "mZKCLDeF2J",
+                "type": "p",
+                "children": [
+                  {
+                    "text": "Phone: {{phone}}"
+                  }
+                ]
+              },
+              {
+                "id": "SkFRnc2b_Y",
+                "type": "p",
+                "children": [
+                  {
+                    "text": "Service: {{service}}"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "vwkw3344i3zqr3ei2ng5c7rv",
+      "title": "Google Sheets",
+      "graphCoordinates": {
+        "x": 2639.25,
+        "y": 291.75
+      },
+      "blocks": [
+        {
+          "id": "ejjhe6f8qddxxvwris10pqzd",
+          "outgoingEdgeId": "ps22d78yy84us41bmoyk7a8h",
+          "type": "Google Sheets",
+          "options": {
+            "credentialsId": "[insert-google-credentials-id]",
+            "sheetId": "0",
+            "spreadsheetId": "[insert-spreadsheet-id]",
+            "action": "Insert a row",
+            "cellsToInsert": [
+              {
+                "column": "Datatime",
+                "value": "{{formattedDatetime}}",
+                "id": "oirel1c23v4mnsil3nh1mgr4"
+              },
+              {
+                "column": "Name",
+                "value": "{{name}}",
+                "id": "m1otlbuxx5ojmb0j8c2o4b6z"
+              },
+              {
+                "column": "Organization",
+                "value": "{{organization}}",
+                "id": "i11w5z061rforsmocf5uul9e"
+              },
+              {
+                "column": "E-mail",
+                "value": "{{email}}",
+                "id": "hmxplzzsn29gq9qfiz6p9djt"
+              },
+              {
+                "column": "CNPJ",
+                "value": "{{cnpj}}",
+                "id": "qvx1s9stk805bxpozpreysxp"
+              },
+              {
+                "column": "Phone",
+                "value": "{{phone}}",
+                "id": "mwzahap1nk3fr78eqj538rdj"
+              },
+              {
+                "column": "Service",
+                "value": "{{service}}",
+                "id": "k6ar9yl2763qwcupketei1nu"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "te26uifdqp6k3h86kv10p3ex",
+      "title": "N8N",
+      "graphCoordinates": {
+        "x": 2640.75,
+        "y": 447.23
+      },
+      "blocks": [
+        {
+          "id": "pxtqkvnrl7p5ppbge3pmq3kt",
+          "outgoingEdgeId": "gwndx0dg3wdf9c3go4bronv8",
+          "type": "Webhook",
+          "options": {
+            "isCustomBody": true,
+            "isExecutedOnClient": false,
+            "webhook": {
+              "url": "https://your-n8n-instance.com/webhook/[insert-webhook-id]",
+              "body": "{\n  \"dateTime\": \"{{formattedDatetime}}\",\n  \"name\": \"{{name}}\",\n  \"organization\": \"{{organization}}\",\n  \"email\": \"{{email}}\",\n  \"cnpj\": \"{{cnpj}}\",\n  \"phone\": \"{{phone}}\",\n  \"service\": \"{{service}}\"\n  \n}"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "pkstlikfia09hfertuyeunjj",
+      "title": "Conclusion",
+      "graphCoordinates": {
+        "x": 2640.75,
+        "y": 604.03
+      },
+      "blocks": [
+        {
+          "id": "nagh5nsrxz9oxrsia7wxib2q",
+          "type": "text",
+          "content": {
+            "richText": [
+              {
+                "id": "n-nt5DN72N",
+                "type": "p",
+                "children": [
+                  {
+                    "text": "Thank you! Your information has been received. Our team will contact you shortly. If you would like to speak with a specialist now, click below:"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "c5azhpi7yhkeoiw6b5b3litu",
+          "type": "choice input",
+          "items": [
+            {
+              "id": "jjcv3j9lhfnqgsgc3xjh3lfw",
+              "outgoingEdgeId": "vqlitq3hjmouayurptj51bq5",
+              "content": "🟢 Chat on WhatsApp"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "id": "s2dynf3wwxi0po4rviqmixfu",
+      "from": {
+        "blockId": "x4a5wnev73vaumdbe65gxoqc"
+      },
+      "to": {
+        "groupId": "o8ms5j416vqjk0l8sbvwji74"
+      }
+    },
+    {
+      "id": "sgwbqb5vinjb58z44k8f7vmv",
+      "from": {
+        "blockId": "ilaumatozhjw7ti587os2cx0"
+      },
+      "to": {
+        "groupId": "rbri19k46n8lzhqhh9yo0gdj"
+      }
+    },
+    {
+      "id": "ga75lcdkv4jp4qxbyqu3bbsq",
+      "from": {
+        "blockId": "a2tk0cxggwj7x1kxmhz6t8hu",
+        "itemId": "qxnz3p7j4scs2437813oap12"
+      },
+      "to": {
+        "groupId": "drl5rfoqgdl2l95m4a4r984x"
+      }
+    },
+    {
+      "id": "jntajcmhi9b3kj63929kiui8",
+      "from": {
+        "blockId": "gll1fmnqdsdms2ffwgj2dtso"
+      },
+      "to": {
+        "groupId": "zp6ipzo75djldbdp3bykzslf"
+      }
+    },
+    {
+      "id": "awc9wfh670c6qmgo5z4grfqv",
+      "from": {
+        "blockId": "ba427ivkh5e3vergyl4l6tah",
+        "itemId": "oup55bpoz2s1qfrnu9kk1xur"
+      },
+      "to": {
+        "groupId": "b86tg1qxj9u1cs119g5kot2m",
+        "blockId": "fdtacj6x5lz5wt23c2i8a5ve"
+      }
+    },
+    {
+      "id": "vcu20eaoumhiocrgj20t7xjv",
+      "from": {
+        "blockId": "ba427ivkh5e3vergyl4l6tah",
+        "itemId": "es14leexp27hq2jre6344qex"
+      },
+      "to": {
+        "groupId": "zp6ipzo75djldbdp3bykzslf"
+      }
+    },
+    {
+      "id": "rdtuehcehgmba2ypgggdtzb3",
+      "from": {
+        "blockId": "ba427ivkh5e3vergyl4l6tah",
+        "itemId": "hpcukuv1f264ksahmcsluctd"
+      },
+      "to": {
+        "groupId": "zp6ipzo75djldbdp3bykzslf"
+      }
+    },
+    {
+      "id": "uxzwmrsppxt41h3hc7199f5i",
+      "from": {
+        "blockId": "ba427ivkh5e3vergyl4l6tah",
+        "itemId": "qdzlx8tt3tx3d5c5r0u9hjct"
+      },
+      "to": {
+        "groupId": "zp6ipzo75djldbdp3bykzslf"
+      }
+    },
+    {
+      "id": "spii8t92m1ip6iqj0bcn2ak8",
+      "from": {
+        "blockId": "ba427ivkh5e3vergyl4l6tah",
+        "itemId": "oumrtc4d4ys3nag3v9m7tbl9"
+      },
+      "to": {
+        "groupId": "zp6ipzo75djldbdp3bykzslf"
+      }
+    },
+    {
+      "id": "yohg0hkjp19v5s39wxty6qtj",
+      "from": {
+        "blockId": "ba427ivkh5e3vergyl4l6tah",
+        "itemId": "z3zhcpp8e65bmcbgdq1lw2er"
+      },
+      "to": {
+        "groupId": "zp6ipzo75djldbdp3bykzslf"
+      }
+    },
+    {
+      "id": "lvtqmmj4thqbto4oco40qob6",
+      "from": {
+        "blockId": "ba427ivkh5e3vergyl4l6tah",
+        "itemId": "sv2yzx8m2rr9odi8vr8xynxi"
+      },
+      "to": {
+        "groupId": "zp6ipzo75djldbdp3bykzslf"
+      }
+    },
+    {
+      "id": "y9vnsqrt2akn88z97peqzx2p",
+      "from": {
+        "blockId": "ba427ivkh5e3vergyl4l6tah",
+        "itemId": "jrfjov3z0ltwh2lnyqk482yv"
+      },
+      "to": {
+        "groupId": "zp6ipzo75djldbdp3bykzslf"
+      }
+    },
+    {
+      "id": "vt4bh4fxp1qyqub8umnqun8t",
+      "from": {
+        "blockId": "ba427ivkh5e3vergyl4l6tah",
+        "itemId": "zu64ovmroplovqucag380z0c"
+      },
+      "to": {
+        "groupId": "zp6ipzo75djldbdp3bykzslf"
+      }
+    },
+    {
+      "id": "z1l9wcmjjy673g21bfddw1bz",
+      "from": {
+        "blockId": "ba427ivkh5e3vergyl4l6tah",
+        "itemId": "ztpbc5hde96hynlp1ddowx50"
+      },
+      "to": {
+        "groupId": "zp6ipzo75djldbdp3bykzslf"
+      }
+    },
+    {
+      "id": "vry8lvu9du66af0mxd7w0ncm",
+      "from": {
+        "blockId": "h1ustukgsa801ten796b5ih8"
+      },
+      "to": {
+        "groupId": "vwkw3344i3zqr3ei2ng5c7rv"
+      }
+    },
+    {
+      "id": "j6a2ponnusdex0y8fyzs51zu",
+      "from": {
+        "blockId": "qxs787vrh9pl8p9fwsw4jjzl"
+      },
+      "to": {
+        "groupId": "b86tg1qxj9u1cs119g5kot2m"
+      }
+    },
+    {
+      "id": "kx2lll0bd2kriec02yyyharg",
+      "from": {
+        "eventId": "ie99fsdkflwvs8rwfdkdzrgg"
+      },
+      "to": {
+        "groupId": "fbbjhz8l1rwxbktoq696fasn"
+      }
+    },
+    {
+      "id": "wx73770b88dqn2rlu4l5qn1y",
+      "from": {
+        "blockId": "hnyn06102j4bvwpiwn1qi6gu"
+      },
+      "to": {
+        "groupId": "drl5rfoqgdl2l95m4a4r984x"
+      }
+    },
+    {
+      "id": "ygbgn4177znr2ylscf8vrdta",
+      "from": {
+        "blockId": "k4buqm4j7dyufe9vtp72umc1",
+        "itemId": "ynet57ywskz5iincpf9mnmhm"
+      },
+      "to": {
+        "groupId": "drl5rfoqgdl2l95m4a4r984x"
+      }
+    },
+    {
+      "id": "ps22d78yy84us41bmoyk7a8h",
+      "from": {
+        "blockId": "ejjhe6f8qddxxvwris10pqzd"
+      },
+      "to": {
+        "groupId": "te26uifdqp6k3h86kv10p3ex"
+      }
+    },
+    {
+      "id": "gwndx0dg3wdf9c3go4bronv8",
+      "from": {
+        "blockId": "pxtqkvnrl7p5ppbge3pmq3kt"
+      },
+      "to": {
+        "groupId": "pkstlikfia09hfertuyeunjj"
+      }
+    },
+    {
+      "id": "vqlitq3hjmouayurptj51bq5",
+      "from": {
+        "blockId": "c5azhpi7yhkeoiw6b5b3litu",
+        "itemId": "jjcv3j9lhfnqgsgc3xjh3lfw"
+      },
+      "to": {
+        "groupId": "ciaf08bvhh2ak4l08ex1vfz3"
+      }
+    },
+    {
+      "id": "v9i2q6mltpyu13a8e9f19u6l",
+      "from": {
+        "blockId": "vsu2oagi9ymgdjlla3fv0pmi"
+      },
+      "to": {
+        "groupId": "drl5rfoqgdl2l95m4a4r984x"
+      }
+    }
+  ],
+  "variables": [
+    {
+      "id": "ggmxz5gbzsroqy3eqwkuv8gz",
+      "name": "dateTime",
+      "isSessionVariable": true
+    },
+    {
+      "id": "pk2kbwcuet7ul5bkfdr2uqpn",
+      "name": "service",
+      "isSessionVariable": false
+    },
+    {
+      "id": "kgvzr8xmbg0ze47ob5qccoaa",
+      "name": "formattedDatetime",
+      "isSessionVariable": false
+    },
+    {
+      "id": "m5gx2wev37iw2tkdyxpdh0s4",
+      "name": "phone",
+      "isSessionVariable": false
+    },
+    {
+      "id": "oz3rxoezdvrgzuqjpxu5rtri",
+      "name": "cnpj",
+      "isSessionVariable": false
+    },
+    {
+      "id": "jn5pf0vi9xma1fyc7ty6hlp5",
+      "name": "email",
+      "isSessionVariable": false
+    },
+    {
+      "id": "pqjt4a8rc5xo87cwfpd6ue63",
+      "name": "organization",
+      "isSessionVariable": false
+    },
+    {
+      "id": "uzrxoxyfnfsucs24l1d0h9ut",
+      "name": "name",
+      "isSessionVariable": false
+    }
+  ],
+  "theme": {
+    "general": {
+      "background": {
+        "type": "None"
+      },
+      "progressBar": {
+        "isEnabled": false
+      }
+    },
+    "chat": {
+      "container": {
+        "backgroundColor": "#ffffff",
+        "border": {
+          "thickness": 0,
+          "opacity": 0.5
+        }
+      },
+      "hostAvatar": {
+        "isEnabled": true,
+        "url": "https://your-domain.com/logo.png"
+      },
+      "guestAvatar": {
+        "isEnabled": false
+      },
+      "hostBubbles": {
+        "backgroundColor": "#ffffff"
+      },
+      "guestBubbles": {
+        "backgroundColor": "#ffffff",
+        "color": "#202020",
+        "border": {
+          "color": "#FE0000"
+        }
+      },
+      "buttons": {
+        "backgroundColor": "#FE0000"
+      },
+      "buttonsInput": {
+        "layout": "vertical"
+      }
+    }
+  },
+  "selectedThemeTemplateId": null,
+  "settings": {
+    "general": {
+      "isBrandingEnabled": true,
+      "isInputPrefillEnabled": false,
+      "systemMessages": {
+        "invalidMessage": "Invalid message. Please try again.",
+        "botClosed": "This bot is currently unavailable.",
+        "networkErrorMessage": "Please check your internet connection and try again.",
+        "popupBlockedTitle": "Popup blocked.",
+        "whatsAppPictureChoiceSelectLabel": ""
+      }
+    },
+    "typingEmulation": {
+      "speed": 500,
+      "maxDelay": 0.5
+    }
+  },
+  "createdAt": "2026-06-24T16:37:06.743Z",
+  "updatedAt": "2026-07-13T13:42:14.823Z",
+  "icon": null,
+  "folderId": null,
+  "publicId": "[insert-typebot-public-id]",
+  "customDomain": null,
+  "workspaceId": "[insert-workspace-id]",
+  "resultsTablePreferences": {
+    "columnsOrder": [
+      "select",
+      "date",
+      "x4a5wnev73vaumdbe65gxoqc",
+      "lyxt3t7j3eiewiqr9itttdfd",
+      "ilaumatozhjw7ti587os2cx0",
+      "vsu2oagi9ymgdjlla3fv0pmi",
+      "a2tk0cxggwj7x1kxmhz6t8hu",
+      "h3fff6yi7v6ha9ci168vme03",
+      "qxs787vrh9pl8p9fwsw4jjzl",
+      "ba427ivkh5e3vergyl4l6tah",
+      "c5azhpi7yhkeoiw6b5b3litu",
+      "kgvzr8xmbg0ze47ob5qccoaa",
+      "logs"
+    ],
+    "columnsVisibility": {
+      "x4a5wnev73vaumdbe65gxoqc": true
+    },
+    "columnsWidth": {}
+  },
+  "isArchived": false,
+  "isClosed": false,
+  "whatsAppCredentialsId": null,
+  "riskLevel": 50,
+  "spaceId": null
+}
