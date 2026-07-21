@@ -10,10 +10,10 @@
       "type": "n8n-nodes-base.webhook",
       "typeVersion": 2.1,
       "position": [
-        -192,
-        80
+        -1120,
+        96
       ],
-      "id": "0cd5c4aa-4be3-4bf9-aea1-c5ca185dd525",
+      "id": "6dedf445-accb-4e9e-ae64-7c41e42bd065",
       "name": "Webhook",
       "webhookId": "7d2e1af1-2c97-4c60-9b8b-0acf6d03d5c9"
     },
@@ -45,10 +45,10 @@
       "type": "n8n-nodes-base.if",
       "typeVersion": 2.3,
       "position": [
-        704,
-        80
+        -224,
+        96
       ],
-      "id": "ece41bda-ff19-40a0-bad3-fde75ae81332",
+      "id": "68655eb1-28fb-4ce3-afa0-98c5d0084301",
       "name": "If"
     },
     {
@@ -58,10 +58,10 @@
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        32,
-        80
+        -896,
+        96
       ],
-      "id": "34173a99-13d8-43cf-8c1e-8ab3ea06218b",
+      "id": "3a54c684-cb5b-411e-bac9-c8d992eef962",
       "name": "Data Processing"
     },
     {
@@ -74,10 +74,10 @@
       "type": "n8n-nodes-base.pipedrive",
       "typeVersion": 1,
       "position": [
-        256,
-        80
+        -672,
+        96
       ],
-      "id": "4faaa3b2-750f-41d2-b5e7-7740b3d337fe",
+      "id": "0ecdcf3f-7f5a-452c-90f6-6bafb41c304f",
       "name": "Search Person",
       "alwaysOutputData": true,
       "credentials": {
@@ -94,10 +94,10 @@
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        480,
-        80
+        -448,
+        96
       ],
-      "id": "86e55de4-a827-4750-b692-492900fcaf52",
+      "id": "f77444a5-642d-4022-9707-40a48a5b36a4",
       "name": "Compare Emails",
       "alwaysOutputData": true
     },
@@ -133,10 +133,10 @@
       "type": "n8n-nodes-base.pipedrive",
       "typeVersion": 1,
       "position": [
-        928,
-        176
+        0,
+        192
       ],
-      "id": "043c0b13-686a-4968-b4ec-85a467b2d965",
+      "id": "777cebff-386e-4a02-86c7-2666db9fcc4e",
       "name": "Create New Contact",
       "credentials": {
         "pipedriveApi": {
@@ -148,7 +148,6 @@
     {
       "parameters": {
         "method": "POST",
-        "url": "https://iastech2.pipedrive.com/api/v1/leads",
         "sendQuery": true,
         "queryParameters": {
           "parameters": [
@@ -176,16 +175,15 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.4,
       "position": [
-        928,
-        -16
+        0,
+        0
       ],
-      "id": "c3535ba2-b001-495d-813f-63f255b0b5af",
+      "id": "9d594266-f22c-4d7d-83c9-945ac2e66f19",
       "name": "New Lead with Existing Person"
     },
     {
       "parameters": {
         "method": "POST",
-        "url": "https://iastech2.pipedrive.com/api/v1/leads",
         "sendQuery": true,
         "queryParameters": {
           "parameters": [
@@ -213,10 +211,10 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.4,
       "position": [
-        1152,
-        176
+        224,
+        192
       ],
-      "id": "a740f9fe-15f8-445a-bd3d-969fb2b32faf",
+      "id": "aae99b47-a9eb-4812-83e4-7047dad1e02d",
       "name": "New Lead with New Person"
     }
   ],
@@ -250,65 +248,18 @@
           }
         ]
       ]
-    },
-    "Tratamento de dados": {
-      "main": [
-        [
-          {
-            "node": "Search Person",
-            "type": "main",
-            "index": 0
-          }
-        ]
-      ]
-    },
-    "Procura uma pessoa": {
-      "main": [
-        [
-          {
-            "node": "Compare Emails",
-            "type": "main",
-            "index": 0
-          }
-        ]
-      ]
-    },
-    "Compara Emails": {
-      "main": [
-        [
-          {
-            "node": "If",
-            "type": "main",
-            "index": 0
-          }
-        ]
-      ]
-    },
-    "Cria um novo contato": {
-      "main": [
-        [
-          {
-            "node": "New Lead with New Person",
-            "type": "main",
-            "index": 0
-          }
-        ]
-      ]
     }
   },
-  "active": true,
+  "active": false,
   "settings": {
     "executionOrder": "v1",
     "binaryMode": "separate",
-    "availableInMCP": false,
-    "timeSavedMode": "fixed",
-    "callerPolicy": "workflowsFromSameOwner"
+    "availableInMCP": false
   },
-  "versionId": "43ee9e22-30d5-45ce-98da-eded3516cc04",
+  "versionId": "92ffec74-934d-4437-b22e-9190158b98ca",
   "meta": {
-    "templateCredsSetupCompleted": true,
     "instanceId": "3f780cabeba7ef1ce6f546b290a92c2a534ee50fed9bf9d6150e0ab9d42916c1"
   },
-  "id": "UGqWgRuyFwMfa9cf",
+  "id": "VAJuIA0SgR8rZRD4",
   "tags": []
 }
